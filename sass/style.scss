@@ -64,7 +64,7 @@ section {
   font-family: $font-subtitles;
   color: $color-text-light;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 3px;
 }
 
@@ -73,28 +73,30 @@ section {
 .splash {
     height: 100vh;
     position: relative;
-    background-image: url(/images/banner.jpg);
+    background-image: url(/images/banner3.jpg);
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .splash-inner {
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .page-subtitle {
   font-family: $font-subtitles;
   color: $color-text-header;
-  font-size: 29px;
+  font-size: 39px;
   margin: 0;
   line-height: 1.2;
+  letter-spacing: 3px;
 }
 .page-title {
   font-family: $font-content;
   color: $color-text-header;
-  font-size: 53px;
+  font-size: 63px;
   margin: 0;
   line-height: 1.2;
 }
@@ -122,16 +124,16 @@ section {
     text-decoration: none;
     color: $color-text-header;
         &:hover {
-            color: #ffcccc;
+            color: $color-yellow;
         }
         &:focus {
-            color: #7efff5;
+            color: #e58e26;
         }
     }
 }
 .menu {
   text-align: right;
-  font-size: 10px;
+  font-size: 12px;
   padding-top: 50px;
 }
 .btn-one {
@@ -155,6 +157,14 @@ section {
     border-radius: 50%;
     border-color: $color-yellow;
     border: solid 3px;
+    cursor: pointer;
+}
+.box i:hover {
+      transition: all 1.2s;
+      color: #535c68;
+      background: #f6e58d;
+      border-color: #f6e58d;
+      opacity: 0.7;
 }
 .services-subtitle {
   text-align: center;
@@ -174,17 +184,25 @@ section {
 }
 .box-portfolio {
   margin-bottom: 35px;
+  cursor: pointer;
 }
 .portfolio-image {
-  max-width: 300px;
+  max-width: 600px;
   justify-content: space-between;
   margin-right: 0;
   object-fit: cover;
+  background-color: #ffffff;
 }
 .portfolio-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 2s;
+}
+.portfolio-image img:hover {
+  transform: scale(0.9, 0.9);
+  filter: grayscale(85%) contrast(140%);
+  opacity: 0.9;
 }
 .portfolio-description {
   bottom: 0;
@@ -243,4 +261,20 @@ footer {
     transition: all 1s;
     background: #182C61;
     opacity: 0.9;
+}
+
+
+/*Media query*/
+@media (max-width: 350px) {
+  .page-subtitle {
+    font-size: 26px;
+  }
+  .page-title {
+    font-size: 43px;
+  }
+}
+@media (max-width: 991px) {
+  section {
+      padding: 40px 0;
+  }
 }
