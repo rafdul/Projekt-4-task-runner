@@ -148,12 +148,13 @@ section {
 /*Services*/
 .box i {
     font-size: 40px;
-    width: 100px;
-    height: 100px;
-    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    line-height: 70px;
     color: $color-yellow;
     border-radius: 50%;
     border-color: $color-yellow;
+    border: solid 3px;
 }
 .services-subtitle {
   text-align: center;
