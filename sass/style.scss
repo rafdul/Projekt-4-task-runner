@@ -100,7 +100,7 @@ section {
 }
 .logo {
   font-family: $font-logo;
-  font-size: 15px;
+  font-size: 22px;
   color: $color-yellow;
   text-align: left;
   font-weight: 900;
@@ -161,7 +161,38 @@ section {
   font-family: $font-content;
   font-size: 20px;
   font-weight: 700;
+  margin-top: 20px;
 }
 .box p {
   color: $color-text-light;
+}
+
+
+/*Portfolio*/
+.portfolio {
+  background-color: #e7e7e7;
+}
+.box-portfolio {
+  margin-bottom: 35px;
+}
+.portfolio-image {
+  max-width: 300px;
+  justify-content: space-between;
+  margin-right: 0;
+  object-fit: cover;
+}
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.portfolio-description {
+  bottom: 0;
+  padding: 15px 0;
+  background-color: #ffffff;
+}
+.box-portfolio p {
+  color: $color-text-light;
+  font-size: 12px;
+  font-style: italic;
 }
