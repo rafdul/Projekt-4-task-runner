@@ -207,4 +207,63 @@ section {
   font-size: 12px;
   font-style: italic;
 }
+
+/*Footer*/
+footer {
+  padding: 40px 0;
+  font-size: 10px;
+  font-family: "Roboto Slab", sans serif;
+  color: #777777;
+}
+
+.copyright p {
+  padding-top: 23px;
+}
+
+.social-media ul {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.social-media li {
+  font-size: 0px;
+  margin: 5px;
+}
+
+.social-media i {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.social-media {
+  padding: 0 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.social-media .icons {
+  -ms-flex: 1;
+      flex: 1;
+  display: inline-block;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  line-height: 80px;
+  text-align: center;
+  color: #ffffff;
+  background: #777777;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+  background: #182C61;
+  opacity: 0.9;
+}
 /*# sourceMappingURL=style.css.map */
