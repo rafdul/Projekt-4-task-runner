@@ -63,7 +63,7 @@ section {
   text-align: center;
   font-family: $font-subtitles;
   color: $color-text-light;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
   letter-spacing: 3px;
 }
@@ -81,7 +81,7 @@ section {
 .splash-inner {
     position: absolute;
     width: 100%;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -90,7 +90,7 @@ section {
   color: $color-text-header;
   font-size: 39px;
   margin: 0;
-  line-height: 1.2;
+  padding-bottom: 20px;
   letter-spacing: 3px;
 }
 .page-title {
@@ -98,7 +98,8 @@ section {
   color: $color-text-header;
   font-size: 63px;
   margin: 0;
-  line-height: 1.2;
+  padding-bottom: 20px;
+
 }
 .logo {
   font-family: $font-logo;
@@ -108,6 +109,9 @@ section {
   font-weight: 900;
   letter-spacing: 2px;
   padding-top: 50px;
+}
+.logo a {
+  color: $color-yellow;
 }
 .menu {
     ul {
@@ -214,6 +218,10 @@ section {
   font-size: 12px;
   font-style: italic;
 }
+.portfolio-description .services-subtitle:hover {
+	color: #5B6A82;
+	text-shadow: 1px 1px #F6C97B;
+}
 
 
 /*Footer*/
@@ -256,25 +264,53 @@ footer {
     color: #ffffff;
     background: $color-text-light;
 }
-.icons:hover {
-    transform: scale(1.2);
-    transition: all 1s;
-    background: #182C61;
-    opacity: 0.9;
+.social-media .icons:hover {
+	transform: scale(1.1);
+	transition: all 1s;
+	background: #5974A3;
 }
 
 
 /*Media query*/
-@media (max-width: 350px) {
+@media (max-width: 425px) {
   .page-subtitle {
     font-size: 26px;
   }
   .page-title {
     font-size: 43px;
   }
+  .btn {
+      min-width: 100px;
+      margin: 12px auto 0 auto;
+      padding: 10px;
+  }
 }
 @media (max-width: 991px) {
   section {
       padding: 40px 0;
+  }
+}
+@media (max-width: 270px) {
+  .page-subtitle {
+    font-size: 16px;
+  }
+  .page-title {
+    font-size: 23px;
+  }
+  .splash-inner {
+    top: 70%;
+  }
+}
+@media (max-height: 400px) {
+  .page-subtitle {
+    font-size: 26px;
+  }
+  .page-title {
+    font-size: 43px;
+  }
+  .btn {
+      min-width: 100px;
+      margin: 12px auto 0 auto;
+      padding: 10px;
   }
 }
