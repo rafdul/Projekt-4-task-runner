@@ -103,7 +103,7 @@ section {
 }
 .logo {
   font-family: $font-logo;
-  font-size: 22px;
+  font-size: 30px;
   color: $color-yellow;
   text-align: left;
   font-weight: 900;
@@ -137,8 +137,8 @@ section {
 }
 .menu {
   text-align: right;
-  font-size: 12px;
-  padding-top: 50px;
+  font-size: 14px;
+  padding-top: 66px;
 }
 .btn-one {
     border-color: $color-yellow;
@@ -301,7 +301,7 @@ footer {
     top: 70%;
   }
 }
-@media (max-height: 400px) {
+@media (max-height: 610px) {
   .page-subtitle {
     font-size: 26px;
   }
@@ -312,5 +312,34 @@ footer {
       min-width: 100px;
       margin: 12px auto 0 auto;
       padding: 10px;
+  }
+}
+
+@media (max-height: 500px) {
+  .page-subtitle {
+    font-size: 20px;
+  }
+  .page-title {
+    font-size: 38px;
+  }
+  .btn {
+      min-width: 100px;
+      margin: 12px auto 0 auto;
+      padding: 10px;
+  }
+	.logo {
+    padding-top: 12px;
+  }
+  .menu {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 762px) {
+  .logo {
+    text-align: center;
+  }
+  .menu {
+    text-align: center;
+    padding-top: 16px;
   }
 }
